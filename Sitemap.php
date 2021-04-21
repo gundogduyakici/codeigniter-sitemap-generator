@@ -3,11 +3,13 @@ defined('BASEPATH') or exit('No direct script access allowed');
 
 class Sitemap extends CI_Controller
 {
-
+    
+    protected $limit = 5;
+    
     public function __construct()
     {
         parent::__construct();
-        $this->limit = 5;
+        $this->limit = $limit;
     }
 
     public function index()
